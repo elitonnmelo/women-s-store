@@ -1,0 +1,47 @@
+page-login {
+    .conteudo{
+        background: url('../../assets/imgs/bg2.jpg') no-repeat center /cover transparent;
+        //background: url('../../assets/imgs/black.png') no-repeat center /cover transparent opacity($color: #000000d5) !important;
+        .conteudo-input {
+            ion-item {
+                //background-color: transparent;
+                border-radius: 30px;
+                background-color: rgba(5, 2, 2, 0.336) !important;
+            }
+            ion-input {
+                color: white;
+            }
+            ::placeholder {
+                color: rgb(211, 207, 207);
+            }
+        }
+        .margin-input-top {
+            margin-top: 20px;
+        }
+        .margin-btn-top {
+            margin-top: 30px;
+        }
+        .btn {
+            background-color: rgb(235, 152, 0);
+            border-radius: 30px;
+            text-transform: capitalize;
+        }
+        .grid-logo {
+            ion-col {
+                text-align: center;
+            }
+            
+        }
+        
+        .margin-btnlink-top {
+            margin-top: 10px;
+        }
+
+        
+    //fim
+    }
+    .btn-link {
+        color: white;
+        text-transform: none;
+    }
+}
