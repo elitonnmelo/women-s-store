@@ -1,3 +1,74 @@
 page-home {
+    .slider{
+        ion-slide {
+             width: 60px;
+             height: 60px;
+             margin-top: 0;
+             padding-top:0;
+             margin-bottom: 30px;
+             padding-right: 0px;
+             align-items: initial;
+     
+             .card-cat{
+               width: 80px;
+               background: rgba(255, 255, 255, 1);
+               box-shadow: initial;
+     
+             }
+         }
+    }
+    .centralizar{
+        align-items : center;;
+    }
+  
 
+    ion-scroll {
+        height: 100px;
+
+        .categoria {
+            position: relative;
+            display: inline-block;
+            color: rgb(82, 82, 82);
+            margin-left: 15px;
+            padding: 1px;
+
+            
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                box-shadow: 0px 0px 0px 2px #999;
+            }
+
+            span {
+                max-width: 55px;
+                font-size: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .card-produto{
+            .img-produto{
+              padding-right: 5px;
+              padding-left: 5px;
+              padding-bottom: 5px;
+              
+            }
+        
+            p{
+              padding-left: 6px;
+              color: #565656
+            }
+        
+            .nomeP{
+              color: black;
+            }
+
+          }
+        
+    }
+
+    
 }
