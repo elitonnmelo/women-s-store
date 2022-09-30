@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the RecuperarSenhaPage page.
@@ -15,11 +15,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RecuperarSenhaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public toastCtrl: ToastController
+    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecuperarSenhaPage');
+  }
+  confirmar(){
+    this.navCtrl.push('LoginPage');
+    this.presentToast();
+  }
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Sua nova senha foi enviado para o e-mail cadastrado acima, verifique sua caixa de mensagens!',
+      duration: 3000
+    });
+    toast.present();
   }
 
 }
