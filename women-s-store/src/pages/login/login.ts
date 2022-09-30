@@ -26,10 +26,10 @@ export class LoginPage {
     this.navCtrl.push(HomePage);
   }
   esqueciSenha(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push('RecuperarSenhaPage');
   }
   cadastro(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push('CadastrarPage');
   }
 
 }
