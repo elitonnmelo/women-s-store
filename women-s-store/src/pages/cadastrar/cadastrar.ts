@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the CadastrarPage page.
@@ -15,11 +15,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CadastrarPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public toastCtrl: ToastController
+    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CadastrarPage');
+  }
+  confirmar(){
+    this.navCtrl.push('LoginPage');
+    this.presentToast();
+  }
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Usuário criado com suscesso!',
+      duration: 3000
+    });
+    toast.present();
   }
 
 }
