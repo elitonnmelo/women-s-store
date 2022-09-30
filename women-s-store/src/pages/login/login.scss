@@ -1,6 +1,6 @@
 page-login {
-    .conteudo{
-        background: url('../../assets/imgs/bg2.jpg') no-repeat center /cover transparent;
+    /*.conteudo{
+        //background: url('../../assets/imgs/bg2.jpg') no-repeat center /cover transparent;
         //background: url('../../assets/imgs/black.png') no-repeat center /cover transparent opacity($color: #000000d5) !important;
         .conteudo-input {
             ion-item {
@@ -39,9 +39,24 @@ page-login {
 
         
     //fim
+    }*/
+    .logo-center {
+        text-align: center ;
     }
     .btn-link {
-        color: white;
+        //color: white;
         text-transform: none;
     }
+    .margin-input-top {
+        margin-top: 20px;
+    }
+    .margin-btn-top {
+        margin-top: 30px;
+    }
+    .btn {
+        background-color: rgb(224, 223, 223);
+        border-radius: 25px;
+        text-transform: capitalize;
+    }
 }
+
