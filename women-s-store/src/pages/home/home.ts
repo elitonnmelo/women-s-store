@@ -8,12 +8,12 @@ import { ListPage } from '../list/list';
 })
 export class HomePage {
 
-  items = [
+  /*items = [
     'Tênis',
     'Shorts',
     'Camisas',
     'Calças'
-  ];
+  ];*/
 
   constructor(public navCtrl: NavController) {
 
@@ -37,21 +37,24 @@ export class HomePage {
       img:"../../assets/imgs/calca.png"
     }
   ]
-  itemSelected(categorias: string) {
-    if (categorias == "Camisas"){
+  itemSelected(categoria, id: number) {
+    if (categoria.id == 1){
       this.navCtrl.push(ListPage);
     }
-    if (categorias == "Shorts"){
+    if (categoria.id == 2){
       this.navCtrl.push('LoginPage');
     }
-    if (categorias == "Tênis"){
+    if (categoria.id == 3){
       this.navCtrl.push('CadastrarPage');
     }
-    if (categorias == "Calças"){
+    if (categoria.id == 4){
       this.navCtrl.push('RecuperarSenhaPage');
     }
    
     
+  }
+  abrirDetalhes(){
+    this.navCtrl.push('DetalhesPage');
   }
 
 }
