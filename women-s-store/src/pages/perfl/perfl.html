@@ -1,10 +1,45 @@
-
-<ion-header>
-  <ion-navbar>
-    <ion-title>Perfl</ion-title>
+<ion-header >
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon color="black" name="menu"></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button ion-button icon-only right (click)="logout()">
+        <ion-icon color="black" name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
+  <ion-list >
+
+
+    <ion-item class="conteudo-input">
+
+      <ion-avatar class="img-center" item-start>
+        <img  [src]="foto">
+        <!--<ion-input disabled type="text" class="text-input" [(ngModel)]="item.nome" ></ion-input>
+
+        <input type="file" #fileUserPhoto style="visibility: hidden; height: 0px" name="files[]" (change)="processWebImage($event)" />-->
+
+        <ion-grid class="grid-list">
+          <ion-row align-items-center justify-content-center>
+            <ion-col align-self-center col-12 col-lg-5 col-xl-5>
+              <ion-list class="button-center">
+                <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+                  {{ item }}
+                </button>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-avatar>
+
+    </ion-item>
+  </ion-list>
+
+
 
 </ion-content>
