@@ -56,5 +56,8 @@ export class HomePage {
   abrirDetalhes(){
     this.navCtrl.push('DetalhesPage');
   }
+  carrinho(){
+    this.navCtrl.push('CarrinhoPage');
+  }
 
 }

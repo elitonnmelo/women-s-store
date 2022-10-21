@@ -14,7 +14,7 @@ import { IonicPage, ModalController, NavController, NavParams, ViewController } 
   templateUrl: 'perfl.html',
 })
 export class PerflPage {
-  
+  foto = 'assets/imgs/user.png';
   items = [
     'Ultimas Compras',
     'Cupons de Desconto',

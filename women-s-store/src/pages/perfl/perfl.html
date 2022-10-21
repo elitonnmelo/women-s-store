@@ -1,11 +1,11 @@
 <ion-header >
   <ion-navbar >
     <button ion-button menuToggle>
-      <ion-icon color="black" name="menu"></ion-icon>
+      <ion-icon color="dark" name="menu"></ion-icon>
     </button>
     <ion-buttons end>
       <button ion-button icon-only right (click)="logout()">
-        <ion-icon color="black" name="exit"></ion-icon>
+        <ion-icon color="dark" name="exit"></ion-icon>
       </button>
     </ion-buttons>
     <ion-title>Perfil</ion-title>
@@ -15,25 +15,35 @@
   <ion-list >
 
 
-    <ion-item class="conteudo-input">
+    <ion-item no-lines>
 
-      <ion-avatar class="img-center" item-start>
+      <ion-avatar class="tm-perfil"item-start>
         <img  [src]="foto">
+        <ion-item class="name-center" no-lines>
+          <ion-label fixed></ion-label>
+          <ion-input disabled type="text" value="Olá Sr(a) Éliton Melo"></ion-input>
+        </ion-item>
+        <ion-item  class="name-center" no-lines>
+          <ion-label fixed></ion-label>
+          <ion-input disabled type="text" value="O que deseja fazer hoje?"></ion-input>
+        </ion-item>
+
         <!--<ion-input disabled type="text" class="text-input" [(ngModel)]="item.nome" ></ion-input>
 
-        <input type="file" #fileUserPhoto style="visibility: hidden; height: 0px" name="files[]" (change)="processWebImage($event)" />-->
+        <input type="file" #fileUserPhoto style="visibility: hidden; height: 0px" name="files[]" (change)="processWebImage($event)" />
 
-        <ion-grid class="grid-list">
+        <ion-grid class="option">
           <ion-row align-items-center justify-content-center>
             <ion-col align-self-center col-12 col-lg-5 col-xl-5>
-              <ion-list class="button-center">
-                <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+              <ion-list >
+                <button class="input-text" no-lines ion-item *ngFor="let item of items" (click)="itemSelected(item)">
                   {{ item }}
                 </button>
               </ion-list>
             </ion-col>
           </ion-row>
-        </ion-grid>
+        </ion-grid>-->
+        <button class="edit" ion-button color="secondary" round>Editar Perfil</button>
 
       </ion-avatar>
 
