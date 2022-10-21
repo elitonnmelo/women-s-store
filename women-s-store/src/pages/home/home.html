@@ -1,9 +1,14 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar >
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon color="dark" name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-buttons color="dark" end>
+      <button class="carrinho" ion-button icon-only right (click)="carrinho()">
+        <ion-icon  name="md-basket"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Feed</ion-title>
   </ion-navbar>
 </ion-header>
 
