@@ -41,7 +41,7 @@ page-login {
     //fim
     }*/
     .conteudo{
-        background-color: rgb(209, 226, 230) !important;
+        background-color: rgb(228, 209, 230) !important;
     }
     
     .logo-center {
@@ -54,17 +54,23 @@ page-login {
     .btn-link {
         //color: white;
         text-transform: none;
+        text-align: center;
+        align-items: center;
+        margin-left: 3.7rem;
     }
     .margin-input-top {
         margin-top: 20px;
     }
     .margin-btn-top {
         margin-top: 30px;
+        //background-color: #5a3877d1;
+        background-color: violeta;
     }
     .btn {
         background-color: rgb(224, 223, 223);
         border-radius: 15px;
         text-transform: capitalize;
+        
     }
 }
 

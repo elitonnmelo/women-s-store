@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, MenuController, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 
 /**
@@ -16,14 +16,18 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public menuCtrl: MenuController
+    ) {
+    this.menuCtrl.enable(false, 'myMenu');
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
   entrar(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage);
   }
   esqueciSenha(){
     this.navCtrl.push('RecuperarSenhaPage');
