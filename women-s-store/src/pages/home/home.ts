@@ -54,10 +54,10 @@ export class HomePage {
     
   }
   abrirDetalhes(){
-    this.navCtrl.push('DetalhesPage');
+    this.navCtrl.setRoot('DetalhesPage');
   }
   carrinho(){
-    this.navCtrl.push('CarrinhoPage');
+    this.navCtrl.setRoot('CarrinhoPage');
   }
 
 }

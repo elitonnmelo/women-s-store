@@ -1,10 +1,10 @@
-<ion-header >
-  <ion-navbar >
+<ion-header  >
+  <ion-navbar color="clear-violeta">
     <button ion-button menuToggle>
-      <ion-icon color="dark" name="menu"></ion-icon>
+      <ion-icon color="roxo" name="menu"></ion-icon>
     </button>
-    <ion-buttons color="dark" end>
-      <button class="carrinho" ion-button icon-only right (click)="carrinho()">
+    <ion-buttons  end>
+      <button color="roxo"  ion-button icon-only right (click)="carrinho()">
         <ion-icon  name="md-basket"></ion-icon>
       </button>
     </ion-buttons>
@@ -39,67 +39,142 @@
         </div>-->
 
         <h3>Destaques</h3>
-        <ion-row >
-          
-          <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
-            <ion-card class="card-produto">
+        <ion-slides pager>
+          <ion-slide>
+            <ion-row >
               
-              <div (click)='abrirDetalhes()'>
-                <img class="img-produto" src="../../assets/imgs/airmax.webp" />
-              </div>
-              <div (click)='abrirDetalhes()'>
-                <p class="nomeP">Tênis</p>
-                <p>Nike Air max</p>
-                <p>R$ 400,00</p>
-              </div>
-            </ion-card>  
-          </ion-col>
-          <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
-            <ion-card class="card-produto">
-              
-              <div (click)='abrirDetalhes()'>
-                <img  class="img-produto" src="../../assets/imgs/camisaAnu.webp" />
-              </div>
-              <div (click)='abrirDetalhes()'>
-                <p class="nomeP">Blusa</p>
-                <p>Blusa Shein</p>
-                <p>R$ 37,80</p>
-              </div>
-            </ion-card>  
-          </ion-col>
+              <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
+                <ion-card class="card-produto">
+                  
+                  <div (click)='abrirDetalhes()'>
+                    <img class="img-produto" src="../../assets/imgs/airmax.webp" />
+                  </div>
+                  <div (click)='abrirDetalhes()'>
+                    <p class="nomeP">Tênis</p>
+                    <p>Nike Air max</p>
+                    <p>R$ 400,00</p>
+                  </div>
+                </ion-card>  
+              </ion-col>
+              <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
+                <ion-card class="card-produto">
+                  
+                  <div (click)='abrirDetalhes()'>
+                    <img  class="img-produto" src="../../assets/imgs/camisaAnu.webp" />
+                  </div>
+                  <div (click)='abrirDetalhes()'>
+                    <p class="nomeP">Blusa</p>
+                    <p>Blusa Nike</p>
+                    <p>R$ 37,80</p>
+                  </div>
+                </ion-card>  
+              </ion-col>
 
-        </ion-row>
+            </ion-row>
+          </ion-slide>
+          <ion-slide>
+            <ion-row >
+              
+              <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
+                <ion-card class="card-produto">
+                  
+                  <div (click)='abrirDetalhes()'>
+                    <img class="img-produto" src="../../assets/imgs/calcamoleton.jfif" />
+                  </div>
+                  <div (click)='abrirDetalhes()'>
+                    <p class="nomeP">Caça</p>
+                    <p>Calça Moleton</p>
+                    <p>R$ 60,00</p>
+                  </div>
+                </ion-card>  
+              </ion-col>
+              <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
+                <ion-card class="card-produto">
+                  
+                  <div (click)='abrirDetalhes()'>
+                    <img  class="img-produto" src="../../assets/imgs/shortslid.jfif" />
+                  </div>
+                  <div (click)='abrirDetalhes()'>
+                    <p class="nomeP">Short</p>
+                    <p>Shrot Masculino</p>
+                    <p>R$ 35,80</p>
+                  </div>
+                </ion-card>  
+              </ion-col>
+
+            </ion-row>
+          </ion-slide>
+        </ion-slides>
+
+
+
         <h3>Mais vendidos</h3>
-        <ion-row >
-          
-          <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
-            <ion-card class="card-produto">
+        <ion-slides pager>
+          <ion-slide>
+            <ion-row >
               
-              <div (click)='abrirDetalhes()'>
-                <img class="img-produto" src="../../assets/imgs/airmax.webp" />
-              </div>
-              <div (click)='abrirDetalhes()'>
-                <p class="nomeP">Tênis</p>
-                <p>Nike Air max</p>
-                <p>R$ 400,00</p>
-              </div>
-            </ion-card>  
-          </ion-col>
-          <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
-            <ion-card class="card-produto">
-              
-              <div (click)='abrirDetalhes()'>
-                <img  class="img-produto" src="../../assets/imgs/camisaAnu.webp" />
-              </div>
-              <div (click)='abrirDetalhes()'>
-                <p class="nomeP">Blusa</p>
-                <p>Blusa Shein</p>
-                <p>R$ 37,80</p>
-              </div>
-            </ion-card>  
-          </ion-col>
+              <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
+                <ion-card class="card-produto">
+                  
+                  <div (click)='abrirDetalhes()'>
+                    <img class="img-produto" src="../../assets/imgs/bone.jfif" />
+                  </div>
+                  <div (click)='abrirDetalhes()'>
+                    <p class="nomeP">Boné</p>
+                    <p>Boné Nike H86</p>
+                    <p>R$ 140,00</p>
+                  </div>
+                </ion-card>  
+              </ion-col>
+              <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
+                <ion-card class="card-produto">
+                  
+                  <div (click)='abrirDetalhes()'>
+                    <img  class="img-produto" src="../../assets/imgs/cropprd.jfif" />
+                  </div>
+                  <div (click)='abrirDetalhes()'>
+                    <p class="nomeP">Blusa</p>
+                    <p>Cropped Colcci</p>
+                    <p>R$ 97,80</p>
+                  </div>
+                </ion-card>  
+              </ion-col>
 
-        </ion-row>
+            </ion-row>
+          </ion-slide>
+          <ion-slide>
+            <ion-row >
+              
+              <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
+                <ion-card class="card-produto">
+                  
+                  <div (click)='abrirDetalhes()'>
+                    <img class="img-produto" src="../../assets/imgs/airmax.webp" />
+                  </div>
+                  <div (click)='abrirDetalhes()'>
+                    <p class="nomeP">Tênis</p>
+                    <p>Nike Air max</p>
+                    <p>R$ 600,00</p>
+                  </div>
+                </ion-card>  
+              </ion-col>
+              <ion-col col-6 col-lg-4 col-xl-3 class="ion-text-left padding-left0" >
+                <ion-card class="card-produto">
+                  
+                  <div (click)='abrirDetalhes()'>
+                    <img  class="img-produto" src="../../assets/imgs/saia.jfif" />
+                  </div>
+                  <div (click)='abrirDetalhes()'>
+                    <p class="nomeP">Saia</p>
+                    <p>Saia Nike</p>
+                    <p>R$ 69,80</p>
+                  </div>
+                </ion-card>  
+              </ion-col>
+
+            </ion-row>
+          </ion-slide>
+        </ion-slides>
 
       </ion-col>
     </ion-row>
