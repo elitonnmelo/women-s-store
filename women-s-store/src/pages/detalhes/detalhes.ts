@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the DetalhesPage page.
@@ -15,11 +16,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetalhesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public viewCtrl: ViewController,
+    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetalhesPage');
   }
+  fechar() {
+    //this.viewCtrl.dismiss();
+    this.navCtrl.setRoot(HomePage);
+  }
 
 }
+
