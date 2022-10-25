@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { MenuController, Nav, NavController, Platform, ViewController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -14,16 +14,18 @@ export class MyApp {
 
   rootPage: any = 'LoginPage';
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
+    public menuController: MenuController,
+    ) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'Perfil', component: 'PerflPage' }
+      { title: 'HOME', component: HomePage, icon: 'md-home' },
+     //{ title: 'ALERT', component: ListPage, icon: 'md-alert' },
+      { title: 'PERFIL', component: 'PerflPage', icon: 'ios-contact' }
 
     ];
 
@@ -36,6 +38,12 @@ export class MyApp {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+  logout(){
+    this.rootPage = 'LoginPage';
+  }
+  close(){
+    this.menuController.toggle();
   }
 
   openPage(page) {

@@ -14,3 +14,15 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-title-ios {
+    margin-left: -3.5rem;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #1b0c2e;
+    pointer-events: auto;
+}
+/*.titulo{
+    linear-gradient(45, violet, blue) !important;
+}*/
