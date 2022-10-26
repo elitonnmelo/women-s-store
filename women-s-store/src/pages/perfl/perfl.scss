@@ -13,15 +13,11 @@ page-perfl {
     }
     .tm-perfil{
         img {
-            margin:5rem auto;
+            margin:5rem 9rem;
             width: 160px;
             height: 160px;
         }
-        .name-center{
-            //margin: 0 auto;
-            //align-items: center;
-            margin-right: 40rem;
-        }
+        
 
     }
     .edit{
@@ -31,6 +27,16 @@ page-perfl {
         width: 60%;
         background-color: darkslateblue
     }
-    
+    .name-center{
+            //margin: 0 auto;
+            //align-items: center;
+            //font-family: 'Antipasto Pro', sans-serif;
+            font-size: 2rem;
+            color: #0c0016;
+            margin-left: 6rem;
+            text-align: center;
+            
+            
+        }
 }
 @import url('http://fonts.cdnfonts.com/css/antipasto-pro');

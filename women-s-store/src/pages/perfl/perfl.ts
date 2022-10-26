@@ -68,5 +68,12 @@ export class PerflPage {
   fechar() {
     this.viewCtrl.dismiss();
   }
+  logout(){
+    this.navCtrl.setRoot('LoginPage');
+  }
+  edit(){
+    const modal = this.modalCtrl.create('DadosDaContaPage');
+      modal.present();
+  }
 
 }
