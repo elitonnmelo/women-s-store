@@ -10,5 +10,32 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-list >
+    <ion-item no-lines>
+      <ion-grid >
+        <ion-row aling-items-center justify-content-center>
+          <ion-col col-12 align-self-center class="logo">
+            <img width="150" height="150" src="../../assets/imgs/logo.png">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="option">
+        <ion-row align-items-center justify-content-center>
+          <ion-col align-self-center col-12 col-lg-5 col-xl-5>
+            <ion-list >
+              <button class="input-text" no-lines ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+                {{ item }}
+              </button>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+    </ion-item>
+  </ion-list>
+
+
 
 </ion-content>

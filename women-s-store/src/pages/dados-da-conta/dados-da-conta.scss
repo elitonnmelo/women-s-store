@@ -1,3 +1,21 @@
 page-dados-da-conta {
-
+    .input-text{
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        font-family: 'Antipasto Pro', sans-serif;
+    }
+    
+    .logo{
+        img{
+            margin:0rem auto;
+            margin-left: 9rem;
+        }
+        
+    }
+    .option{
+        align-items: center;
+        margin-top: 10rem;
+        padding-left: 2em;
+    }
 }
