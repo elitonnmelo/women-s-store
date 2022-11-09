@@ -27,7 +27,7 @@
         
           <ion-row>
             <ion-col>
-              <button ion-button icon-start clear small>
+              <button ion-button icon-start clear small color= "dark">
                 <ion-icon ios="ios-star" md="md-star"></ion-icon>
                 <ion-icon ios="ios-star" md="md-star"></ion-icon>
                 <ion-icon ios="ios-star" md="md-star"></ion-icon>
@@ -40,18 +40,25 @@
           </ion-row>
         
         </ion-card>
-        <button ion-button icon-start>
-          <ion-icon name="md-remove"></ion-icon>
-          
-        </button>
-        <button ion-button icon-end>
-          <ion-icon name="md-add"></ion-icon>
-        </button>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start  (click)= "decrement()" color="violeta">
+              <ion-icon name="md-remove"></ion-icon>
+            </button>
+            <ion-input disabled color = "dark" [(ngModel)] = "data"></ion-input>
+            <button ion-button icon-end  (click)= "increment()" color="violeta">
+              <ion-icon name="md-add"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+        
 
-        <button ion-button icon-start (click)= "abrirCarrinho()">
-          <ion-icon name="md-basket"></ion-icon>
-          Adicionar ao carrinho
-        </button>
+        <ion-item no-lines>
+          <button ion-button block icon-start (click)= "abrirCarrinho()" color="roxo" >
+            <ion-icon name="md-basket"></ion-icon>
+            Adicionar ao carrinho
+          </button>
+        </ion-item> 
 
       </ion-col>
     </ion-row>

@@ -31,6 +31,16 @@ export class DetalhesPage {
   abrirCarrinho(){
     this.navCtrl.setRoot('CarrinhoPage');
   }
+  data = 0;
+  
+  increment() {
+    this.data = this.data + 1;
+    
+  }
+  decrement(){
+    this.data = this.data - 1;
+    
+  }
 
 }
 
