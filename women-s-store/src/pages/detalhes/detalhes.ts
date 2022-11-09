@@ -28,6 +28,9 @@ export class DetalhesPage {
     //this.viewCtrl.dismiss();
     this.navCtrl.setRoot(HomePage);
   }
+  abrirCarrinho(){
+    this.navCtrl.setRoot('CarrinhoPage');
+  }
 
 }
 
