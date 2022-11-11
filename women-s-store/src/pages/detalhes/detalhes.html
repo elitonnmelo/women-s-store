@@ -41,11 +41,12 @@
         
         </ion-card>
         <ion-row>
-          <ion-col>
+          <ion-col class="contador">
+            <h5>Quantidade:</h5>
             <button ion-button icon-start  (click)= "decrement()" color="violeta">
               <ion-icon name="md-remove"></ion-icon>
             </button>
-            <ion-input disabled color = "dark" [(ngModel)] = "data"></ion-input>
+            <ion-input disabled class="contador" color = "dark" [(ngModel)] = "data"></ion-input>
             <button ion-button icon-end  (click)= "increment()" color="violeta">
               <ion-icon name="md-add"></ion-icon>
             </button>
