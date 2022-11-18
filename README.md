@@ -5,3 +5,8 @@ Ao entrar no aplicativo  o ususário que nao é cadastardo pode realizar seu cad
 
 ![image](https://user-images.githubusercontent.com/88889584/202318491-81bead78-b9e6-4c46-b636-a80a179c4921.png)
 
+
+Menu interativo, onde o usuário pode optar por visulizar seu perfil entrar na home ou até mesmo se preferir fazer logout do App
+
+![image](https://user-images.githubusercontent.com/88889584/202716630-2f387b4b-12f6-424c-a746-d634d2d28cad.png)
+
