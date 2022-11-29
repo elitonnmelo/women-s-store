@@ -1,5 +1,5 @@
 <h1> Women's Store</h1>
-o Aplicativo web mobile Women's Store, é um app voltado para o mercado de moda ferminina, onde o usuário pode entrar na plataforma e filtrar por modalidade de roupas, preços e estilo, assim como o usuariio pretender.
+O aplicativo web mobile Women's Store, é um app voltado para o mercado de moda ferminina, onde o usuário pode entrar na plataforma e filtrar por modalidade de roupas, preços e estilo, assim como o usuariio pretender.
 
 Ao entrar no aplicativo  o ususário que nao é cadastardo pode realizar seu cadastro na pagina de cadastro e seguir com seu login e senha, ou seguir com login e senha caso ja seja um usuário da Women's Store e caso o usuário venha a esquecer de sua senha basta clicar em recuperar senha, que logo será enviado sua nova senha para o e-mail cadastrado.
 
